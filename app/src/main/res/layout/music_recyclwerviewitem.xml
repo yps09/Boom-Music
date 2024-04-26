@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="20dp"
+        android:layout_margin="15dp"
+        >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:background="@drawable/shadow_efect"
+        >
+
+        <ImageView
+            android:id="@+id/musicDisc"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/musicdisc1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/musicTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Le le rom rom "
+            android:textSize="18sp"
+            android:textStyle="bold|italic"
+            android:textColor="@color/white"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            app:layout_constraintStart_toEndOf="@+id/musicDisc"
+            app:layout_constraintTop_toTopOf="@+id/musicDisc" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.cardview.widget.CardView>
